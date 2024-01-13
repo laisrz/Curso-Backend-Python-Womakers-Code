@@ -1,0 +1,131 @@
+body {
+    height: 100vh; /* o body ocupará toda a altura disponível no dispositivo */
+    display: flex;
+    flex-direction: column; /* por padrão a direção flex é na horizontal (row), portanto temos que mudar para vertical (column) */
+    justify-content: space-between; /* os elementos terão espaçamento igual entre eles */ 
+    font-family: "Roboto", sans-serif;
+    color: black;
+    --cor-destaque: #87d0a6; /* criamos uma variável em css aqui */
+}
+
+.header {
+    width: 100%; /* ocupará todo o espaço disponível */
+    max-width: 900px; /* mas todo o espaço disponível até um max de 900px */
+    padding: 8px;
+    box-sizing: border-box; /* para controlar exatamente o tamanho final do elemento*/
+    margin: 0 auto; /* margin 0 em cima e embaixo, e nas laterais, ajustará a margem automaticamente de acordo com o espaço disponível */
+    display: flex;
+    justify-content: flex-end; /* para que o conteúdo fique no canto direito do box */
+}
+
+.header__link {
+    text-decoration: none; /* para retirar o underline padrão de um link */
+    box-sizing: border-box;
+    padding: 4px;
+}
+
+.header__link:hover {
+    opacity: .6;
+}
+
+.header__link:focus {
+    outline: none; /* retira a configuração padrão */
+    background-color: #4d4d4d;
+    border-radius: 5px;
+}
+
+.icone {
+    width: 24px;
+    border-radius: 50%;
+}
+
+.main {
+    width: 100%;
+    max-width: 700px; /* para ficar menor que o header no seu tamanho max */
+    padding: 8px; /* mesmo padding para todos os elementos */
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.perfil {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* elementos do perfil estão dispostos no sentido vertical */
+    align-items: center; /* alinhar os elementos filhos do perfil no centro */
+}
+
+.perfil__foto {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.perfil__nome {
+    font-family: "Lemon", cursive;
+    font-size: 52px;
+    font-weight: 400;
+    color: var(--cor-destaque);
+    margin: 16px 0;
+}
+
+.perfil__descricao {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+.section {
+    padding: 8px;
+    width: 100%;
+    max-width: 350px;
+    margin: 24px auto; /* é uma boa prática manter a padding e margin a mesma no site inteiro ou então múltiplos de um valor...8, 16, 24 etc */
+    box-sizing: border-box; /* para que a descrição dos projetos respeite a padding direita em dispositivos pequenos */
+}
+
+.section__titulo {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--cor-destaque);
+    margin: 16px 0;
+}
+
+.projeto {
+    background-color: #efe1e1;
+    padding: 8px;
+    margin: 16px 0;
+    box-sizing: border-box;
+}
+
+.projeto__titulo {
+    font-size: 18px;
+    font-weight: 400;
+    color:var(--cor-destaque);
+    margin: 8px 0;
+}
+
+.projeto__descricao {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 8px 0;
+}
+
+.footer {
+    width: 100%;
+    height: 42px;
+    background-color: var(--cor-destaque);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-shrink: 0; /* impede que o footer se comprima */
+}
+
+.footer__texto {
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
