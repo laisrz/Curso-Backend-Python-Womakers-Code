@@ -1,5 +1,4 @@
 .header {
-    border: 1px solid red;
     width: 100%; /* ocupará todo o espaço disponível */
     max-width: 900px; /* mas todo o espaço disponível até um max de 900px */
     padding: 8px;
@@ -31,7 +30,6 @@
 }
 
 .main {
-    border: 1px solid red;
     width: 100%;
     max-width: 700px; /* para ficar menor que o header no seu tamanho max */
     padding: 8px; /* mesmo padding para todos os elementos */
@@ -40,7 +38,6 @@
 }
 
 .perfil {
-    border: 1px solid red;
     width: 100%;
     display: flex;
     flex-direction: column; /* elementos do perfil estão dispostos no sentido vertical */
@@ -70,4 +67,61 @@
     width: 100%;
     max-width: 350px;
     text-align: center;
+}
+
+.section {
+    padding: 8px;
+    width: 100%;
+    max-width: 350px;
+    margin: 24px auto; /* é uma boa prática manter a padding e margin a mesma no site inteiro ou então múltiplos de um valor...8, 16, 24 etc */
+}
+
+.section__titulo {
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #87d0a6;
+    margin: 16px 0;
+}
+
+.projeto {
+    background-color: #efe1e1;
+    padding: 8px;
+    margin: 16px 0;
+    box-sizing: border-box;
+}
+
+.projeto__titulo {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color:#87d0a6;
+    margin: 8px 0;
+}
+
+.projeto__descricao {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color:black;
+    margin: 8px 0;
+}
+
+.footer {
+    width: 100%;
+    height: 42px;
+    background-color: #87d0a6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.footer__texto {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color:black;
+    display: flex;
+    align-items: center;
 }
