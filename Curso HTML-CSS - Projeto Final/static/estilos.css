@@ -1,0 +1,31 @@
+.header {
+    border: 1px solid red;
+    width: 100%; /* ocupará todo o espaço disponível */
+    max-width: 900px; /* mas todo o espaço disponível até um max de 900px */
+    padding: 8px;
+    box-sizing: border-box; /* para controlar exatamente o tamanho final do elemento*/
+    margin: 0 auto; /* margin 0 em cima e embaixo, e nas laterais, ajustará a margem automaticamente de acordo com o espaço disponível */
+    display: flex;
+    justify-content: flex-end; /* para que o conteúdo fique no canto direito do box */
+}
+
+.header__link {
+    text-decoration: none; /* para retirar o underline padrão de um link */
+    box-sizing: border-box;
+    padding: 4px;
+}
+
+.header__link:hover {
+    opacity: .6;
+}
+
+.header__link:focus {
+    outline: none; /* retira a configuração padrão */
+    background-color: #4d4d4d;
+    border-radius: 5px;
+}
+
+.icone {
+    width: 24px;
+    border-radius: 50%;
+}
