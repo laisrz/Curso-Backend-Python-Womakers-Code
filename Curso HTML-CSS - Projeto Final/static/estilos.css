@@ -29,3 +29,45 @@
     width: 24px;
     border-radius: 50%;
 }
+
+.main {
+    border: 1px solid red;
+    width: 100%;
+    max-width: 700px; /* para ficar menor que o header no seu tamanho max */
+    padding: 8px; /* mesmo padding para todos os elementos */
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.perfil {
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* elementos do perfil estão dispostos no sentido vertical */
+    align-items: center; /* alinhar os elementos filhos do perfil no centro */
+}
+
+.perfil__foto {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.perfil__nome {
+    font-family: "Lemon", cursive;
+    font-size: 52px;
+    font-weight: 400;
+    color: #87d0a6;
+    margin: 16px 0;
+}
+
+.perfil__descricao {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    margin: 0;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
