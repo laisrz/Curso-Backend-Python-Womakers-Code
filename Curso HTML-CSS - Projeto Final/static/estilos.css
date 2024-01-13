@@ -1,3 +1,13 @@
+body {
+    height: 100vh; /* o body ocupará toda a altura disponível no dispositivo */
+    display: flex;
+    flex-direction: column; /* por padrão a direção flex é na horizontal (row), portanto temos que mudar para vertical (column) */
+    justify-content: space-between; /* os elementos terão espaçamento igual entre eles */ 
+    font-family: "Roboto", sans-serif;
+    color: black;
+    --cor-destaque: #87d0a6; /* criamos uma variável em css aqui */
+}
+
 .header {
     width: 100%; /* ocupará todo o espaço disponível */
     max-width: 900px; /* mas todo o espaço disponível até um max de 900px */
@@ -54,15 +64,13 @@
     font-family: "Lemon", cursive;
     font-size: 52px;
     font-weight: 400;
-    color: #87d0a6;
+    color: var(--cor-destaque);
     margin: 16px 0;
 }
 
 .perfil__descricao {
-    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: black;
     margin: 0;
     width: 100%;
     max-width: 350px;
@@ -74,13 +82,13 @@
     width: 100%;
     max-width: 350px;
     margin: 24px auto; /* é uma boa prática manter a padding e margin a mesma no site inteiro ou então múltiplos de um valor...8, 16, 24 etc */
+    box-sizing: border-box; /* para que a descrição dos projetos respeite a padding direita em dispositivos pequenos */
 }
 
 .section__titulo {
-    font-family: "Roboto", sans-serif;
     font-size: 22px;
     font-weight: 700;
-    color: #87d0a6;
+    color: var(--cor-destaque);
     margin: 16px 0;
 }
 
@@ -92,36 +100,32 @@
 }
 
 .projeto__titulo {
-    font-family: "Roboto", sans-serif;
     font-size: 18px;
     font-weight: 400;
-    color:#87d0a6;
+    color:var(--cor-destaque);
     margin: 8px 0;
 }
 
 .projeto__descricao {
-    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color:black;
     margin: 8px 0;
 }
 
 .footer {
     width: 100%;
     height: 42px;
-    background-color: #87d0a6;
+    background-color: var(--cor-destaque);
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+    flex-shrink: 0; /* impede que o footer se comprima */
 }
 
 .footer__texto {
-    font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-weight: 400;
-    color:black;
     display: flex;
     align-items: center;
 }
