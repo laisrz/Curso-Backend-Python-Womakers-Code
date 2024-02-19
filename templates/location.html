@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+
+
+        <!-- Include jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <!-- Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+       
+        <title>Ricky&Morty</title>
+    </head>
+
+    <body>
+        <main class="container-fluid">
+            <h1>Ricky&Morty Locations</h1>
+            <h4>Location name: {{location.name}}</h4>
+            <h4>Location type: {{location.type}}</h4>
+            <h4>Location dimension: {{location.dimension}}</h4>
+            <h4>Location residents:</h4>
+              
+
+            <ul>{% for character in characters %}
+                <a href="/profile/{{character}}"><li>{{characters[character]}}</li></a>
+                {% endfor %}
+            </ul>
+
+          
+
+          
+        </main>
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+
+</html>
